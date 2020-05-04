@@ -1,0 +1,29 @@
+.stage {
+    background-color:#005a43;
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+.animate.student {
+  width: 100%;
+  position: relative;
+  animation: animate_student 8s infinite;
+}
+
+.animate.diploma {
+  width: 100%;
+  position: relative;
+  animation: animate_diploma 8s infinite;
+}
+
+@keyframes animate_student {
+  0%   {right: 0px;}
+  50%  {right: 40%;}
+  100% {right: 110%;}
+}
+
+@keyframes animate_diploma {
+  0%   {right: 40%;opacity:0;}
+  50%  {right: 40%;opacity:1;}
+  100% {right: 110%;}
+}
