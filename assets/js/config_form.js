@@ -20,6 +20,12 @@ window.config_form = {
             "label":"School",
             "value":'Binghamton University'
         },
+        {
+            "name":"color",
+            "label":"School Color",
+            "type":"color",
+            "value":"#005a43"
+        },
 		{
 			"type": "output",
 			"label": "",
@@ -54,7 +60,8 @@ window.config_form = {
 					],
 					"type": "text",
 					"widgetType": "input",
-					"editable": true
+                    "editable": true,
+                    "required":true
 				},
 				{
 					"label": "Last Name",
@@ -68,7 +75,8 @@ window.config_form = {
 					],
 					"type": "text",
 					"widgetType": "input",
-					"editable": true
+					"editable": true,
+                    "required":true
 				},
 				{
 					"label": "Degree",

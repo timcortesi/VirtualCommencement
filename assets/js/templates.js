@@ -1,7 +1,7 @@
 var templates = {
 "main":
 `
-<div class="stage">
+<div class="stage" {{#config.color}}style="background-color:{{config.color}};"{{/config.color}}>
     {{>faculty_seating}}
     {{#student}}
     <div class="vc-container">
