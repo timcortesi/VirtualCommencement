@@ -28,19 +28,21 @@ trigger_student = function(index) {
 
 function start() {
     var index = 0;
-    trigger_student(index);
-    index++;
-    var walk_interval = setInterval(function() {
-        if (typeof app.data.students[index] === 'undefined') {
-            clearInterval(walk_interval);
-            app.data.student = false;
-            app.update();
-            config_form.modal();
-        } else {
-            trigger_student(index);
-            index++;
-        }
-    }, 8000)
+    setTimeout(function(){ 
+        trigger_student(index);
+        index++;
+        var walk_interval = setInterval(function() {
+            if (typeof app.data.students[index] === 'undefined') {
+                clearInterval(walk_interval);
+                app.data.student = false;
+                app.update();
+                config_form.modal();
+            } else {
+                trigger_student(index);
+                index++;
+            }
+        }, 8000)    
+    }, 3000);
 }
 
 show_form();
