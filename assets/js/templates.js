@@ -31,7 +31,7 @@ var templates = {
 {{>music}}
 `,
 "music": `<center>
-<iframe style="width:50%;height:50px;margin-top:100px;" src="https://www.youtube.com/embed/Kw-_Ew5bVxs?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:50%;height:50px;margin-top:100px;" src="https://www.youtube.com/embed/Kw-_Ew5bVxs?{{#play}}autoplay=1{{/play}}&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 `,
 

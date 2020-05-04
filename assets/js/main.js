@@ -27,6 +27,8 @@ trigger_student = function(index) {
 }
 
 function start() {
+    app.data.play = true;
+    app.update();
     var index = 0;
     setTimeout(function(){ 
         trigger_student(index);
@@ -35,6 +37,7 @@ function start() {
             if (typeof app.data.students[index] === 'undefined') {
                 clearInterval(walk_interval);
                 app.data.student = false;
+                app.data.play = false;
                 app.update();
                 config_form.modal();
             } else {
@@ -42,7 +45,7 @@ function start() {
                 index++;
             }
         }, 8000)    
-    }, 3000);
+    }, 5000);
 }
 
 show_form();

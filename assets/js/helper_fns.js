@@ -3,6 +3,7 @@ window.app = {
     update:{},
 }
 
+app.data.play = false;
 app.data.config = {};
 app.data.student_columns = ['x','x','x','x','x','x','x','x']
 app.data.student_rows = ['x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x']
