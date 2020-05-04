@@ -30,8 +30,9 @@ var templates = {
 {{>student_seating}}
 {{>music}}
 `,
-"music": `
-<iframe style="width:100%;height:100px;" src="https://www.youtube.com/embed/Kw-_Ew5bVxs?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+"music": `<center>
+<iframe style="width:50%;height:50px;margin-top:100px;" src="https://www.youtube.com/embed/Kw-_Ew5bVxs?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 `,
 
 "faculty_seating" : `
