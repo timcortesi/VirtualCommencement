@@ -28,8 +28,8 @@ trigger_student = function(index) {
 
 function start() {
     var index = 0;
-    // trigger_student(index);
-    // index++;
+    trigger_student(index);
+    index++;
     var walk_interval = setInterval(function() {
         if (typeof app.data.students[index] === 'undefined') {
             clearInterval(walk_interval);
