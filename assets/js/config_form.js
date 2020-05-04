@@ -18,12 +18,14 @@ window.config_form = {
         {
             "name":"school",
             "label":"School",
+            "columns": 6,
             "value":'Binghamton University'
         },
         {
             "name":"color",
             "label":"School Color",
             "type":"color",
+            "columns": 6,
             "value":"#005a43"
         },
 		{
